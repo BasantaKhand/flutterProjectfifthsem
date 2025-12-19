@@ -1,3 +1,4 @@
+import 'package:dinesmart_app/screens/dashboard/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -89,7 +90,7 @@ class LoginPage extends StatelessWidget {
                         // Navigate to Home page
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
+                          MaterialPageRoute(builder: (_) => const DashboardScreen()),
                         );
                       },
                       child: Text(
